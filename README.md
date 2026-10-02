@@ -240,8 +240,8 @@ flowchart TD
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/maralack-afrikaans-ai-companion.git
-   cd maralack-afrikaans-ai-companion
+   git clone https://github.com/maralackdavid/Afrikaans-AI-companion.git
+   cd Afrikaans-AI-companion
    ```
 
 2. **Install dependencies:**
