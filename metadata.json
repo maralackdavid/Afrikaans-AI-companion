@@ -1,0 +1,10 @@
+{
+  "name": "Maralack Afrikaans AI Companion",
+  "description": "A real-time conversational Afrikaans and isiXhosa language partner powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
