@@ -1,11 +1,11 @@
-# Afrikaans AI Companion (Multimodal Heritage & Real-Time Voice System)
+# GenAI CHatBot- Afrikaans AI Companion (Multimodal Heritage & Real-Time Voice System)
 
 [![Google Gemini](https://img.shields.io/badge/Google_Gemini-3.1_Flash_Live-4285F4?logo=googlegemini)](https://ai.google.dev/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 [![Express](https://img.shields.io/badge/Express-5.0-000000?logo=express)](https://expressjs.com/)
 [![Framework](https://img.shields.io/badge/Methodology-PMI--CPMAI-blue)](https://www.pmi.org/)
 
-A full-duplex multimodal language learning and cultural preservation platform designed to preserve and teach regional South African dialects (**Kaapse Afrikaans**, **Hoofafrikaans**, and **isiXhosa**). Powered by the **Gemini Live API** (`gemini-3.1-flash-live-preview`), **Gemini 2.5 Flash**, **Gemini TTS**, and **Google Veo 3.1** video synthesis.
+A full-duplex multimodal language learning and cultural preservation platform designed to preserve and teach regional South African dialects (**Kaapse Afrikaans**, **Formal Afrikaans**, and **isiXhosa**). Powered by the **Gemini Live API** (`gemini-3.1-flash-live-preview`), **Gemini 2.5 Flash**, **Gemini TTS**, and **Google Veo 3.1** video synthesis.
 
 ---
 
