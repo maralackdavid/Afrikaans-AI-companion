@@ -135,40 +135,6 @@ sequenceDiagram
     Server->>GeminiLive: session.close()
 ```
 
----
-
-### Async Video Generation Pipeline (Mermaid.js)
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User as User
-    participant Client as ImageGenMode Tab
-    participant Server as Express API (/api/gemini/*)
-    participant Veo as Google Veo 3.1 Lite
-
-    User->>Client: Submits Prompt & Reference Image
-    Client->>Server: POST /api/gemini/generate-video { prompt, image, aspectRatio }
-    Server->>Veo: ai.models.generateVideos({ model: "veo-3.1-lite-generate-preview", ... })
-    Veo-->>Server: Return operationName
-    Server-->>Client: { operationName }
-
-    loop Poll Status (every 10s)
-        Client->>Server: POST /api/gemini/video-status { operationName }
-        Server->>Veo: ai.operations.getVideosOperation(operation)
-        Veo-->>Server: { done: boolean }
-        Server-->>Client: { done: boolean }
-    end
-
-    Client->>Server: POST /api/gemini/video-download { operationName }
-    Server->>Veo: Fetch video stream via signed Google API key
-    Veo-->>Server: MP4 Video Buffer
-    Server-->>Client: { video: "data:video/mp4;base64,..." }
-    Client->>User: Renders playable HTML5 video player
-```
-
----
-
 ### Application Tab State & Navigation Flow (Mermaid.js)
 
 ```mermaid
