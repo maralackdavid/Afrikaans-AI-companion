@@ -1,4 +1,4 @@
-# GenAI CHatBot- Afrikaans AI Companion (Multimodal Heritage & Real-Time Voice System)
+# GenAI ChatBot- Afrikaans AI Companion (Multimodal Heritage & Real-Time Voice System)
 
 [![Google Gemini](https://img.shields.io/badge/Google_Gemini-3.1_Flash_Live-4285F4?logo=googlegemini)](https://ai.google.dev/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
