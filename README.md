@@ -1,11 +1,11 @@
-# Afrikaans AI Companion (Multimodal Heritage & Real-Time Voice System)
+# GenAI ChatBot - Afrikaans AI Companion (Multimodal Heritage & Real-Time Voice System)
 
 [![Google Gemini](https://img.shields.io/badge/Google_Gemini-3.1_Flash_Live-4285F4?logo=googlegemini)](https://ai.google.dev/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 [![Express](https://img.shields.io/badge/Express-5.0-000000?logo=express)](https://expressjs.com/)
 [![Framework](https://img.shields.io/badge/Methodology-PMI--CPMAI-blue)](https://www.pmi.org/)
 
-A full-duplex multimodal language learning and cultural preservation platform designed to preserve and teach regional South African dialects (**Kaapse Afrikaans**, **Hoofafrikaans**, and **isiXhosa**). Powered by the **Gemini Live API** (`gemini-3.1-flash-live-preview`), **Gemini 2.5 Flash**, **Gemini TTS**, and **Google Veo 3.1** video synthesis.
+A full-duplex multimodal language learning and cultural preservation platform designed to preserve and teach regional South African dialects (**Kaapse Afrikaans**, **Afrikaans**, and **isiXhosa**). Powered by the **Gemini Live API** (`gemini-3.1-flash-live-preview`), **Gemini 2.5 Flash**, **Gemini TTS**, and **Google Veo 3.1** video synthesis.
 
 ---
 
@@ -19,7 +19,7 @@ Following the **PMI Certified Professional in Managing AI (CPMAI) Phase I (Busin
 * **Projected Financial & Cultural Impact**: Delivers sub-200ms latency full-duplex voice tutoring at a unit cost of **< \$0.02 per interactive session** (using Gemini 3.1 Flash Lite / Live API), reducing private language tutoring costs by 90%+ while democratizing scalable cultural preservation.
 
 ### 1.2 Cognitive vs. Non-Cognitive Justification
-* **Why AI is Required (Probabilistic Need)**: Fluid spoken dialogue, real-time code-switching between Kaapse Afrikaans, Hoofafrikaans, and English, dynamic accent comprehension, and adaptive pronunciation feedback require probabilistic multimodal processing that static audio files or rule-based chatbots cannot replicate.
+* **Why AI is Required (Probabilistic Need)**: Fluid spoken dialogue, real-time code-switching between Kaapse Afrikaans, Afrikaans, and English, dynamic accent comprehension, and adaptive pronunciation feedback require probabilistic multimodal processing that static audio files or rule-based chatbots cannot replicate.
 * **Non-Cognitive Integration**: WebSocket connection lifecycle management, 16kHz PCM audio stream framing, session state tracking, flashcard deck indexing, and UI state transitions in React 19 / Express 5 are **100% deterministic**, reserving LLM inference strictly for speech understanding, dialogue synthesis, and media generation.
 
 ### 1.3 AI Pattern Mapping
