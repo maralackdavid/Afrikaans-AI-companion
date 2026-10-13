@@ -1,6 +1,6 @@
 # GenAI ChatBot - Afrikaans AI Companion (Multimodal Language Learning & Cultural Preservation Platform)
 
-> **Enterprise AI Strategy & Multimodal Architecture Framework**: Bridging AWS/GCP Cloud Architecture, CPMAI Project Lifecycle, and Executive Value Governance. This repository demonstrates the practical application of the **AWS Certified AI Business Strategist (AIB-C01)** curriculum, **PMI-CPMAI** methodology, and enterprise multimodal cloud architecture for digital education, cultural preservation, and proven business value creation.
+> **GenAI Strategy & Multimodal Architecture Framework**: This repository demonstrates the practical application of some of the **AWS Certified AI Business Strategist (AIB-C01)** frameworks, **PMI-CPMAI** methodologies, and enterprise multimodal cloud architecture for digital education, cultural preservation, and proven business value creation. Bridging AWS/GCP Cloud Architecture, CPMAI Project Lifecycle, and Executive Value Governance. 
 
 ---
 
