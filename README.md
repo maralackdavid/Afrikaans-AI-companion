@@ -1,14 +1,14 @@
 # GenAI ChatBot - Afrikaans AI Companion (Multimodal Language Learning & Cultural Preservation Platform)
 
-> **GenAI Strategy & Multimodal Architecture Framework**: This repository demonstrates the practical application of some of the **AWS Certified AI Business Strategist (AIB-C01)** frameworks, **PMI-CPMAI** methodologies, and enterprise multimodal cloud architecture for digital education, cultural preservation, and proven business value creation. Bridging AWS/GCP Cloud Architecture, CPMAI Project Lifecycle, and Executive Value Governance. 
+> **Government GenAI Strategy & Multimodal Architecture Framework**: This repository demonstrates the practical application of some of the **AWS Certified AI Business Strategist (AIB-C01)** frameworks, **PMI-CPMAI** methodologies, and government/enterprise multimodal cloud architecture for digital education, cultural preservation, and proven business value creation. Bridging AWS/GCP Cloud Architecture, CPMAI Project Lifecycle, and Executive Value Governance. 
 
 ---
 
 ## Executive Overview & Business Use Case
 
 * **Core Business Use Case**: *The primary business use case is a full-duplex multimodal AI language learning and cultural preservation platform that delivers real-time conversational fluency coaching in Cape Flats slang, formal Afrikaans and isiXhosa while reducing unit interaction costs by 68% compared to traditional 1:1 human tutoring and scaling access to over 50,000 active learners with sub-500ms voice response latencies.*
-* **Strategic Context**: Enterprise conversational AI projects frequently fail due to high latency, poor dialect comprehension, unconstrained API token costs, and a lack of alignment between technical performance (audio streaming, TTS/STT) and business ROI.
-* **Integrated Solution Blueprint**: This repository delivers an end-to-end consulting framework and working cloud implementation that unifies:
+* **Strategic Context**: Government conversational AI projects frequently fail due to high latency, poor dialect comprehension, unconstrained API token costs, and a lack of alignment between technical performance (audio streaming, TTS/STT) and business ROI.
+* **Integrated Solution Blueprint**: This repository delivers end-to-end frameworks and working cloud implementation that unifies:
   1. **Strategic Selection & Alignment**: Probabilistic task filtering and 3-Year Total Cost of Ownership (TCO) analysis.
   2. **Financial Value & ROI Governance**: Multi-stakeholder KPI framing, 4-component financial ROI modeling, and FinOps controls.
   3. **Cognitive Project Management for AI (CPMAI)**: A disciplined 6-phase lifecycle governing AI delivery from ideation to active portfolio scale.
@@ -19,14 +19,14 @@
 ## 1. Strategic Frameworks & Selection Methodology
 
 ### 1.1 Probabilistic vs. Deterministic Task Filtering (The 95% Rule)
-Before committing enterprise capital, every system function is evaluated against structural task characteristics:
+Before committing local government capital, every system function is evaluated against structural task characteristics:
 * **Predictability**: Deterministic tasks (user account management, billing, lesson progress tracking) are handled by standard microservices. Probabilistic tasks (free-form voice dialogue, dialect nuance recognition, pronunciation feedback) are routed to Generative AI.
 * **The 95% Rule**: If a static decision tree or rule engine covers 95% of operational cases, build the rules engine. AI is deployed only when natural language variability, accent ambiguity, or contextual dialogue renders static rules ineffective.
 
 ### 1.2 The 4-Filter Use Case Selection Framework
 Candidate initiatives are filtered across four non-negotiable dimensions:
 1. **Business Impact**: $1,090,000/yr opportunity through tutoring overhead reduction and user base scaling.
-2. **Data Availability**: High-quality, curated Kaapse and formal Afrikaans audio corpora and parallel translation pairs.
+2. **Data Availability**: High-quality, curated Kaapse and formal Afrikaans audio and parallel translation pairs.
 3. **Organizational Readiness**: Strong sponsorship from linguistic advisors, community champions, and product leads.
 4. **Strategic Alignment**: Directly supports the enterprise digital education and cultural preservation roadmap.
 
