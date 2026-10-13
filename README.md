@@ -6,7 +6,7 @@
 
 ## Executive Overview & Business Use Case
 
-* **Core Business Use Case**: *The primary business use case is a full-duplex multimodal AI language learning and cultural preservation platform that delivers real-time conversational fluency coaching in Kaapse and formal Afrikaans while reducing unit interaction costs by 68% compared to traditional 1:1 human tutoring and scaling access to over 50,000 active learners with sub-500ms voice response latencies.*
+* **Core Business Use Case**: *The primary business use case is a full-duplex multimodal AI language learning and cultural preservation platform that delivers real-time conversational fluency coaching in Cape Flats slang and formal Afrikaans while reducing unit interaction costs by 68% compared to traditional 1:1 human tutoring and scaling access to over 50,000 active learners with sub-500ms voice response latencies.*
 * **Strategic Context**: Enterprise conversational AI projects frequently fail due to high latency, poor dialect comprehension, unconstrained API token costs, and a lack of alignment between technical performance (audio streaming, TTS/STT) and business ROI.
 * **Integrated Solution Blueprint**: This repository delivers an end-to-end consulting framework and working cloud implementation that unifies:
   1. **Strategic Selection & Alignment**: Probabilistic task filtering and 3-Year Total Cost of Ownership (TCO) analysis.
