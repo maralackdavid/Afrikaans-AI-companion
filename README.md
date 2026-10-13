@@ -16,7 +16,40 @@
 
 ---
 
-## 1. CPMAI Lifecycle & Strategic Value Integration
+## 1. Strategic Frameworks & Selection Methodology
+
+### 1.1 Probabilistic vs. Deterministic Task Filtering (The 95% Rule)
+Before committing enterprise capital, every system function is evaluated against structural task characteristics:
+* **Predictability**: Deterministic tasks (user account management, billing, lesson progress tracking) are handled by standard microservices. Probabilistic tasks (free-form voice dialogue, dialect nuance recognition, pronunciation feedback) are routed to Generative AI.
+* **The 95% Rule**: If a static decision tree or rule engine covers 95% of operational cases, build the rules engine. AI is deployed only when natural language variability, accent ambiguity, or contextual dialogue renders static rules ineffective.
+
+### 1.2 The 4-Filter Use Case Selection Framework
+Candidate initiatives are filtered across four non-negotiable dimensions:
+1. **Business Impact**: $1,090,000/yr opportunity through tutoring overhead reduction and user base scaling.
+2. **Data Availability**: High-quality, curated Kaapse and formal Afrikaans audio corpora and parallel translation pairs.
+3. **Organizational Readiness**: Strong sponsorship from linguistic advisors, community champions, and product leads.
+4. **Strategic Alignment**: Directly supports the enterprise digital education and cultural preservation roadmap.
+
+### 1.3 3-Year Build vs. Buy vs. Partner TCO Framework
+Evaluating options past initial marketing claims requires modeling full 3-Year Total Cost of Ownership (TCO):
+
+| Cost Element | Option A: Build In-House | Option B: Buy Off-the-Shelf SaaS | Option C: Partner (Recommended) |
+| :--- | :--- | :--- | :--- |
+| **Upfront / Co-Dev Cost** | $1,200,000 | $100,000 | $520,000 |
+| **Annual Operating Opex (3 Yrs)** | $450,000 ($150K/yr) | $1,350,000 ($450K/yr) | $220,000 ($73K/yr) |
+| **Dialect Mismatch Loss** | $0 | $400,000 (45% user churn) | $0 (Custom dialect fine-tuning) |
+| **3-Year Total Cost (TCO)** | **$1,650,000** | **$1,850,000** | **$740,000** |
+| **Deployment Timeline** | 14 Months | 2 Months | **4 Months** |
+| **IP & Custom Model Rights** | 100% Owned | 0% (Vendor Locked) | **100% Enterprise Owned** |
+
+### 1.4 Active Portfolio Governance & Transition Strategy
+* **Scale**: High return, strong data flywheel through continuous user dialogue alignment.
+* **Pause / Terminate Triggers**: Clear operational conditions to suspend or terminate underperforming features.
+* **Transition Approach**: Phased rollout across regional user cohorts with automated fallback to text-based interaction if audio streaming latency degrades.
+
+---
+
+## 2. CPMAI Lifecycle & Strategic Value Integration
 
 Execution follows the **Cognitive Project Management for AI (CPMAI)** methodology, embedding strategy and value governance into each phase gate:
 
@@ -75,39 +108,6 @@ graph TD
 * **Module 4 Transition Strategy**: Execute a **Phased Rollout by Cohort/Region** with clear rollback triggers to protect brand reputation.
 * **Module 5 Controls**: Monitor **Leading Indicators** (45 min/wk session duration, <0.5% audio packet loss, 94.2% dialect accuracy) and enforce FinOps controls (audio compression, low-cost model routing for simple turns, 30-day audio log retention).
 * **Gate 4 Milestone**: Active Portfolio Governance classification (*Scale*, *Pause*, or *Terminate*).
-
----
-
-## 2. Strategic Frameworks & Selection Methodology
-
-### 2.1 Probabilistic vs. Deterministic Task Filtering (The 95% Rule)
-Before committing enterprise capital, every system function is evaluated against structural task characteristics:
-* **Predictability**: Deterministic tasks (user account management, billing, lesson progress tracking) are handled by standard microservices. Probabilistic tasks (free-form voice dialogue, dialect nuance recognition, pronunciation feedback) are routed to Generative AI.
-* **The 95% Rule**: If a static decision tree or rule engine covers 95% of operational cases, build the rules engine. AI is deployed only when natural language variability, accent ambiguity, or contextual dialogue renders static rules ineffective.
-
-### 2.2 The 4-Filter Use Case Selection Framework
-Candidate initiatives are filtered across four non-negotiable dimensions:
-1. **Business Impact**: $1,090,000/yr opportunity through tutoring overhead reduction and user base scaling.
-2. **Data Availability**: High-quality, curated Kaapse and formal Afrikaans audio corpora and parallel translation pairs.
-3. **Organizational Readiness**: Strong sponsorship from linguistic advisors, community champions, and product leads.
-4. **Strategic Alignment**: Directly supports the enterprise digital education and cultural preservation roadmap.
-
-### 2.3 3-Year Build vs. Buy vs. Partner TCO Framework
-Evaluating options past initial marketing claims requires modeling full 3-Year Total Cost of Ownership (TCO):
-
-| Cost Element | Option A: Build In-House | Option B: Buy Off-the-Shelf SaaS | Option C: Partner (Recommended) |
-| :--- | :--- | :--- | :--- |
-| **Upfront / Co-Dev Cost** | $1,200,000 | $100,000 | $520,000 |
-| **Annual Operating Opex (3 Yrs)** | $450,000 ($150K/yr) | $1,350,000 ($450K/yr) | $220,000 ($73K/yr) |
-| **Dialect Mismatch Loss** | $0 | $400,000 (45% user churn) | $0 (Custom dialect fine-tuning) |
-| **3-Year Total Cost (TCO)** | **$1,650,000** | **$1,850,000** | **$740,000** |
-| **Deployment Timeline** | 14 Months | 2 Months | **4 Months** |
-| **IP & Custom Model Rights** | 100% Owned | 0% (Vendor Locked) | **100% Enterprise Owned** |
-
-### 2.4 Active Portfolio Governance & Transition Strategy
-* **Scale**: High return, strong data flywheel through continuous user dialogue alignment.
-* **Pause / Terminate Triggers**: Clear operational conditions to suspend or terminate underperforming features.
-* **Transition Approach**: Phased rollout across regional user cohorts with automated fallback to text-based interaction if audio streaming latency degrades.
 
 ---
 
