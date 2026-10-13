@@ -18,7 +18,7 @@
 
 ## 1. CPMAI Lifecycle & Strategic Value Integration
 
-Execution follows the **Cognitive Project Management for AI (CPMAI)** methodology, embedding Module 4 strategy and Module 5 value governance into each phase gate:
+Execution follows the **Cognitive Project Management for AI (CPMAI)** methodology, embedding strategy and value governance into each phase gate:
 
 ```mermaid
 graph TD
@@ -36,14 +36,14 @@ graph TD
 
 #### Phase I: Business Understanding & Strategic Selection
 * **CPMAI Objective**: Establish clear business goals, problem framing, and success criteria for language learning and cultural retention.
-* **Module 4 Integration**: Apply the **Probabilistic vs. Deterministic Filter (95% Rule)**. Conversational accent adaptation and nuanced idiom feedback are highly probabilistic (routed to GenAI), whereas user authentication, billing, and progress tracking are deterministic (routed to standard API microservices). Evaluate candidate initiatives using the **4-Filter Selection Framework** (Business Impact, Data Availability, Organizational Readiness, Strategic Alignment).
-* **Module 5 Integration**: Define **Audience-Tailored KPI Frameworks** across the executive suite (CFO, COO/EdTech Ops, CIO/CTO, Chief Content Officer).
+* **Integration**: Apply the **Probabilistic vs. Deterministic Filter (95% Rule)**. Conversational accent adaptation and nuanced idiom feedback are highly probabilistic (routed to GenAI), whereas user authentication, billing, and progress tracking are deterministic (routed to standard API microservices). Evaluate candidate initiatives using the **4-Filter Selection Framework** (Business Impact, Data Availability, Organizational Readiness, Strategic Alignment).
+* **Integration**: Define **Audience-Tailored KPI Frameworks** across the executive suite (CFO, COO/EdTech Ops, CIO/CTO, Chief Content Officer).
 * **Gate 1 Milestone**: Business Case & Strategic Go/No-Go Sign-off.
 
 #### Phase II: Data Understanding & Security Mapping
 * **CPMAI Objective**: Assess audio quality, dialect representation (Kaapse and formal Afrikaans), privacy constraints, and consent metadata.
-* **Module 4 Integration**: Audit audio datasets for regional dialect nuances, noise ratios, and speech licensing permissions.
-* **Module 5 Integration**: Establish historical **Pre-Launch Baselines** (e.g., baseline learner session duration of 12 min/week on static apps, baseline voice latency of 1.8s) to ensure all post-launch engagement and cost claims are provable.
+* **Integration**: Audit audio datasets for regional dialect nuances, noise ratios, and speech licensing permissions.
+* **Integration**: Establish historical **Pre-Launch Baselines** (e.g., baseline learner session duration of 12 min/week on static apps, baseline voice latency of 1.8s) to ensure all post-launch engagement and cost claims are provable.
 * **Gate 2 Milestone**: Dialect Quality, Consent & Privacy Approval.
 
 #### Phase III: Data Preparation & Multimodal Pipeline
@@ -78,7 +78,7 @@ graph TD
 
 ---
 
-## 2. Module 4 Strategic Frameworks & Selection Methodology
+## 2. Strategic Frameworks & Selection Methodology
 
 ### 2.1 Probabilistic vs. Deterministic Task Filtering (The 95% Rule)
 Before committing enterprise capital, every system function is evaluated against structural task characteristics:
@@ -111,7 +111,7 @@ Evaluating options past initial marketing claims requires modeling full 3-Year T
 
 ---
 
-## 3. Module 5 Value Measurement & Financial Governance
+## 3. Value Measurement & Financial Governance
 
 ### 3.1 Pre-Launch Baselines & Multi-Stakeholder KPI Matrix
 "A KPI without a baseline is an opinion; a KPI with a baseline is evidence." Baselines established prior to launch:
