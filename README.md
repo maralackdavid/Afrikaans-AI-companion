@@ -1,7 +1,7 @@
 # GenAI ChatBot - Afrikaans AI Companion (Multimodal Language Learning & Cultural Preservation Platform)
 
 > **Government GenAI Strategy & Multimodal Architecture Framework**: This repository demonstrates the practical application of some of the **AWS Certified AI Business Strategist (AIB-C01)** frameworks, **PMI-CPMAI** methodologies, and government/enterprise multimodal cloud architecture for digital education, cultural preservation, and proven business value creation. Bridging AWS/GCP Cloud Architecture, CPMAI Project Lifecycle, and Executive Value Governance. 
-
+---
 > **Prototype disclaimer:** Independent AWS lab-based production-grade AI proof-of-concepts — no client engagements. All business-value figures are *modeled* at enterprise scale, not measured at a client. Benchmarks below are simulated prototype evaluation results.
 ---
 
