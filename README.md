@@ -98,7 +98,8 @@
 - **Gate 3 Milestone**: Financial Payback & Conversational Quality Sign-off.
 
 #### Phase VI: Operationalization & Portfolio Governance
-- Phased rollout by learner cohort/region with rollback triggers (fallback to text on audio degradation). Monitored via §3.4 leading indicators and FinOps controls. Portfolio classification: - **Scale** / Pause / Terminate.
+- Phased rollout by learner cohort/region with rollback triggers (fallback to text on audio degradation). Monitored via §3.4 leading indicators and FinOps controls.
+- Portfolio classification: **Scale** / Pause / Terminate.
 - **Gate 4 Milestone**: Active Portfolio Governance sign-off.
 
 ---
