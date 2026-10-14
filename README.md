@@ -210,5 +210,5 @@ Afrikaans-AI-companion/
 📍 Seattle, WA · [LinkedIn](https://www.linkedin.com/in/david-maralack-3898135/) · maralackdavid@gmail.com
 
 - **20+ years** directing complex software/hardware programs at **Amazon** and **Microsoft** (Alexa, Kindle, Windows).
-- **3-year AI & architecture focus**: PMI-CPMAI certified; **AWS Certified AI Business Strategist (AIB-C01) in progress**; building production-grade cloud reference architectures as independent prototypes.
+- **3-year AI & Cloud architecture focus**: PMI-CPMAI certified; **AWS Certified AI Business Strategist (AIB-C01) in progress**; building production-grade cloud reference architectures as independent prototypes.
 - **U.S. Patent Holder**: #8,683,579 (Digital Licensing) · #8,984,124 (Adaptive Data Monitoring).
