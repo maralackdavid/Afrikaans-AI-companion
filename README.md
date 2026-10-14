@@ -1,153 +1,142 @@
-# GenAI ChatBot - Afrikaans AI Companion (Multimodal Language Learning & Cultural Preservation Platform)
+## GenAI ChatBot — Afrikaans AI Companion (Multimodal Language Learning & Cultural Preservation Platform)
 
-> **Government GenAI Strategy & Multimodal Architecture Framework**: This repository demonstrates the practical application of some of the **AWS Certified AI Business Strategist (AIB-C01)** frameworks, **PMI-CPMAI** methodologies, and government/enterprise multimodal cloud architecture for digital education, cultural preservation, and proven business value creation. Bridging AWS/GCP Cloud Architecture, CPMAI Project Lifecycle, and Executive Value Governance. 
----
-> **Prototype disclaimer:** Independent AWS lab-based production-grade AI proof-of-concepts — no client engagements. All business-value figures are *modeled* at enterprise scale, not measured at a client. Benchmarks below are simulated prototype evaluation results.
+> **EdTech GenAI Strategy & Multimodal Architecture**: This repository demonstrates the practical application of the **PMI-CPMAI** framework and the **AWS AI Business Strategist (AIB-C01 — in progress)** methodology for AI strategy, delivery governance, and value demonstration in digital education.
+
+> **Prototype disclaimer:** Independent lab-based production-grade AI proof-of-concept — no client engagements. All business-value figures are *modeled* at enterprise scale, not measured at a client. Benchmarks below are simulated prototype evaluation results.
+
 ---
 
 ## Executive Overview & Business Use Case
 
-* **Core Business Use Case**: *The primary business use case is a full-duplex multimodal AI language learning and cultural preservation platform that delivers real-time conversational fluency coaching in Cape Flats slang, formal Afrikaans and isiXhosa while reducing unit interaction costs by 68% compared to traditional 1:1 human tutoring and scaling access to over 50,000 active learners with sub-500ms voice response latencies.*
-* **Strategic Context**: Government conversational AI projects frequently fail due to high latency, poor dialect comprehension, unconstrained API token costs, and a lack of alignment between technical performance (audio streaming, TTS/STT) and business ROI.
-* **Integrated Solution Blueprint**: This repository delivers end-to-end frameworks and working cloud implementation that unifies:
-  1. **Strategic Selection & Alignment**: Probabilistic task filtering and 3-Year Total Cost of Ownership (TCO) analysis.
-  2. **Financial Value & ROI Governance**: Multi-stakeholder KPI framing, 4-component financial ROI modeling, and FinOps controls.
-  3. **Cognitive Project Management for AI (CPMAI)**: A disciplined 6-phase lifecycle governing AI delivery from ideation to active portfolio scale.
-  4. **Full-Duplex Multimodal Architecture**: A high-performance streaming engine utilizing Gemini Live API (16kHz PCM capture), Gemini 3.1 Flash Lite, Gemini TTS, and Google Veo video synthesis hosted on Google Cloud Run with AWS hybrid API routing.
+- **Core Use Case**: A full-duplex multimodal AI language-learning and cultural-preservation platform delivering real-time conversational fluency coaching in Cape Flats slang (Kaapse Afrikaans), formal Afrikaans, and isiXhosa — modeled to cut per-session interaction cost by 68% versus 1:1 human tutoring and scale to 50,000+ active learners at sub-500ms voice response latency.
+- **Strategic Context**: Conversational AI initiatives in education fail less from model capability than from high latency, poor dialect comprehension, unconstrained API token costs, and missing alignment between technical performance and business ROI.
+- **What This Repo Contains**: An end-to-end blueprint plus working prototype unifying:
+  1. **Investment Strategy & Selection** (§1): probabilistic task filtering, 4-filter selection, CPMAI 3x3 feasibility, 3-year TCO.
+  2. **CPMAI Delivery Lifecycle** (§2): 6-phase gated delivery applying the §1 strategy at each gate.
+  3. **Value & Financial Governance** (§3): baselines, multi-stakeholder KPIs, 4-component ROI, FinOps controls.
+  4. **Full-Duplex Multimodal Architecture** (§4): Gemini Live API (16kHz PCM), Gemini 3.1 Flash Lite, Gemini TTS, Google Veo video synthesis on Cloud Run.
 
 ---
 
-## 1. Strategic Frameworks & Selection Methodology
+## Live Demo
+
+**Try the working prototype**: [Maralack Cape Flats AI Companion](https://maralack-afrikaans-ai-companion-1072691364189.us-east1.run.app/) — a deployed demo of the full-duplex voice companion described below, running on Cloud Run. Pick a topic (Greetings, Food & Dining, Travel, Numbers & Time, Common Verbs, isiXhosa Basics) and try a voice session.
+
+*Demo runs the prototype build; see [Prototype Benchmarks](#5-build-plan--prototype-benchmarks) for evaluated performance.*
+
+---
+
+## 1. Investment Strategy & Selection
+
+*This section states each framework once. The delivery lifecycle (§2) applies them at phase gates instead of re-defining them.*
 
 ### 1.1 Probabilistic vs. Deterministic Task Filtering (The 95% Rule)
-Before committing local government capital, every system function is evaluated against structural task characteristics:
-* **Predictability**: Deterministic tasks (user account management, billing, lesson progress tracking) are handled by standard microservices. Probabilistic tasks (free-form voice dialogue, dialect nuance recognition, pronunciation feedback) are routed to Generative AI.
-* **The 95% Rule**: If a static decision tree or rule engine covers 95% of operational cases, build the rules engine. AI is deployed only when natural language variability, accent ambiguity, or contextual dialogue renders static rules ineffective.
 
-### 1.2 The 4-Filter Use Case Selection Framework
-Candidate initiatives are filtered across four non-negotiable dimensions:
-1. **Business Impact**: $1,090,000/yr opportunity through tutoring overhead reduction and user base scaling.
-2. **Data Availability**: High-quality, curated Kaapse and formal Afrikaans audio and parallel translation pairs.
-3. **Organizational Readiness**: Strong sponsorship from linguistic advisors, community champions, and product leads.
-4. **Strategic Alignment**: Directly supports the enterprise digital education and cultural preservation roadmap.
+- **Deterministic** (routed to standard microservices): user account management, billing, lesson progress tracking.
+- **Probabilistic** (routed to GenAI): free-form voice dialogue, dialect nuance recognition, pronunciation feedback — where natural-language variability and accent ambiguity defeat static rules.
 
-### 1.3 3-Year Build vs. Buy vs. Partner TCO Framework
-Evaluating options past initial marketing claims requires modeling full 3-Year Total Cost of Ownership (TCO):
+### 1.2 The 4-Filter Use-Case Selection
 
-| Cost Element | Option A: Build In-House | Option B: Buy Off-the-Shelf SaaS | Option C: Partner (Recommended) |
-| :--- | :--- | :--- | :--- |
-| **Upfront / Co-Dev Cost** | $1,200,000 | $100,000 | $520,000 |
-| **Annual Operating Opex (3 Yrs)** | $450,000 ($150K/yr) | $1,350,000 ($450K/yr) | $220,000 ($73K/yr) |
-| **Dialect Mismatch Loss** | $0 | $400,000 (45% user churn) | $0 (Custom dialect fine-tuning) |
-| **3-Year Total Cost (TCO)** | **$1,650,000** | **$1,850,000** | **$740,000** |
-| **Deployment Timeline** | 14 Months | 2 Months | **4 Months** |
-| **IP & Custom Model Rights** | 100% Owned | 0% (Vendor Locked) | **100% Enterprise Owned** |
+1. **Business Impact**: $1,090,000/yr modeled opportunity via tutoring-cost reduction and learner-base scaling.
+2. **Data Availability**: curated Kaapse/formal Afrikaans audio corpora and parallel translation pairs.
+3. **Organizational Readiness**: sponsorship from linguistic advisors, community champions, and product leads.
+4. **Strategic Alignment**: supports the digital-education and cultural-preservation roadmap.
 
-### 1.4 Active Portfolio Governance & Transition Strategy
-* **Scale**: High return, strong data flywheel through continuous user dialogue alignment.
-* **Pause / Terminate Triggers**: Clear operational conditions to suspend or terminate underperforming features.
-* **Transition Approach**: Phased rollout across regional user cohorts with automated fallback to text-based interaction if audio streaming latency degrades.
+### 1.3 CPMAI 3x3 Go/No-Go Assessment
 
-### 1.5 CPMAI Go/No-Go Assessment (3x3 Feasibility Matrix)
+| Pillar | Criteria | Status | Justification |
+| --- | --- | --- | --- |
+| **Business** | Problem definition | 🟢 GO | Clear gap in dialect-accurate interactive voice learning |
+| | Community support | 🟢 GO | Strong engagement for regional language preservation |
+| | Sufficient ROI | 🟢 GO | Serverless WebSockets + Flash Lite → < $0.02/session modeled cost |
+| **Data** | Availability | 🟢 GO | Dialect corpora and pronunciation sets validated by native speakers |
+| | Access & security | 🟢 GO | `wss://` streaming with ephemeral session keys |
+| | Quality | 🟢 GO | Curated vocabulary; prompt engineering enforces authentic idioms |
+| **Execution** | Technology & skills | 🟢 GO | Gemini Live API, React 19, Express 5, `@google/genai` SDK |
+| | Timeline | 🟢 GO | Modular modes: LiveMode, LearnMode, TriviaMode, ImageGenMode |
+| | Operational fit | 🟢 GO | Cross-platform web app (desktop + mobile browsers) |
 
-| Feasibility Pillar | Assessment Criteria | Status | Strategic Justification |
-| :--- | :--- | :---: | :--- |
-| **Business Feasibility** | Problem Definition | 🟢 **GO** | Clear cultural gap; high demand for interactive, dialect-accurate voice learning. |
-| | Community Support | 🟢 **GO** | Strong community engagement for regional language preservation and education. |
-| | Sufficient ROI | 🟢 **GO** | Serverless WebSockets + Gemini Flash Lite achieve < \$0.02/session cost structure. |
-| **Data Feasibility** | Data Availability | 🟢 **GO** | Dialect corpora, pronunciation sets, and cultural trivia validated by native speakers. |
-| | Access & Security | 🟢 **GO** | Audio streaming handled over secure WebSockets (`wss://`) with ephemeral session keys. |
-| | Data Quality | 🟢 **GO** | Curated vocabulary and prompt engineering enforce authentic regional idioms. |
-| **Execution Feasibility** | Technology & Skills | 🟢 **GO** | Gemini Live API, React 19, Express 5, and `@google/genai` SDK offer mature tooling. |
-| | Implementation Timeline | 🟢 **GO** | Modular studio design: LiveMode, LearnMode, TriviaMode, and ImageGenMode. |
-| | Operational Context | 🟢 **GO** | Cross-platform web application accessible on desktop and mobile browsers. |
+**Overall: ALL GREEN — approved for implementation (Gate 1).**
 
-* *Overall Assessment*: **ALL GREEN (GO)** — Project approved for technical implementation.
+### 1.4 3-Year Build vs. Buy vs. Partner TCO (Modeled)
+
+| Cost Element | Option A: Build In-House | Option B: Buy SaaS | Option C: Partner (Recommended) |
+| --- | --- | --- | --- |
+| **Upfront / Co-Dev** | $1,200,000 | $100,000 | $520,000 |
+| **Annual Opex (3 Yrs)** | $450,000 ($150K/yr) | $1,350,000 ($450K/yr) | $220,000 ($73K/yr) |
+| **Dialect Mismatch Loss** | $0 | $400,000 (45% churn — no Kaapse support) | $0 (custom dialect tuning) |
+| **3-Year TCO** | **$1,650,000** | **$1,850,000** | **$740,000** |
+| **Timeline** | 14 months | 2 months | **4 months** |
+| **IP & Model Rights** | 100% owned | 0% (vendor-locked) | **100% retained** |
+
+**Decision: Partner** — 4-month delivery, custom dialect support, lowest TCO, full IP retention.
+
 ---
 
-## 2. CPMAI Lifecycle & Strategic Value Integration
+## 2. CPMAI Delivery Lifecycle
 
-Execution follows the **Cognitive Project Management for AI (CPMAI)** methodology, embedding strategy and value governance into each phase gate:
+*Each phase applies the §1 strategy at its gate; framework definitions are not repeated here.*
 
-#### Phase I: Business Understanding & Strategic Selection
-* **CPMAI Objective**: Establish clear business goals, problem framing, and success criteria for language learning and cultural retention.
-* **Integration**: Apply the **Probabilistic vs. Deterministic Filter (95% Rule)**. Conversational accent adaptation and nuanced idiom feedback are highly probabilistic (routed to GenAI), whereas user authentication, billing, and progress tracking are deterministic (routed to standard API microservices). Evaluate candidate initiatives using the **4-Filter Selection Framework** (Business Impact, Data Availability, Organizational Readiness, Strategic Alignment).
-* **Integration**: Define **Audience-Tailored KPI Frameworks** across the executive suite (CFO, COO/EdTech Ops, CIO/CTO, Chief Content Officer).
-* **Gate 1 Milestone**: Business Case & Strategic Go/No-Go Sign-off.
+#### Phase I: Business Understanding
+Applied §1.1–§1.3 filters → **Gate 1 GO**. Defined audience-tailored KPIs (see §3.2).
+**Gate 1 Milestone**: Business Case & Go/No-Go Sign-off.
 
-#### Phase II: Data Understanding & Security Mapping
-* **CPMAI Objective**: Assess audio quality, dialect representation (Kaapse and formal Afrikaans), privacy constraints, and consent metadata.
-* **Integration**: Audit audio datasets for regional dialect nuances, noise ratios, and speech licensing permissions.
-* **Integration**: Establish historical **Pre-Launch Baselines** (e.g., baseline learner session duration of 12 min/week on static apps, baseline voice latency of 1.8s) to ensure all post-launch engagement and cost claims are provable.
-* **Gate 2 Milestone**: Dialect Quality, Consent & Privacy Approval.
+#### Phase II: Data Understanding & Security
+Audited audio datasets for dialect nuance, noise ratios, and speech-licensing consent. Captured pre-launch baselines (see §3.1).
+**Gate 2 Milestone**: Dialect Quality, Consent & Privacy Approval.
 
 #### Phase III: Data Preparation & Multimodal Pipeline
-* **CPMAI Objective**: Clean, sample, normalize, and format audio streams for real-time inference.
-* **Technical Execution**: Ingest raw microphone inputs, apply 16kHz PCM audio resampling, chunk audio frames for WebSocket streaming, and align text-audio-video prompt templates.
-* **Governance**: Enforce FinOps data sampling policies (15% experimental sample limit) and token budgeting to manage pre-production compute costs.
+16kHz PCM resampling, WebSocket audio-frame chunking, text-audio-video prompt alignment. FinOps: 15% experimental data sampling; token budgeting.
+**Milestone**: Streaming pipeline operational.
 
 #### Phase IV: Model Development & Cloud Architecture
-* **CPMAI Objective**: Construct the streaming engine and select optimal build/buy/partner deployment paths.
-* **Module 4 Integration**: Conduct a **3-Year Build vs. Buy vs. Partner TCO Analysis**:
-  * *Build In-House*: $1,650,000 3-Year TCO ($1.2M upfront + $150K/yr opex); 14-month delivery timeline risks missing the market window.
-  * *Buy (Off-the-Shelf SaaS)*: $1,450,000 3-Year TCO ($350K/yr licensing + $400K API/token markups); lacks support for regional Afrikaans dialects, causing 45% user drop-off.
-  * *Partner (Systems Integrator + Custom Engine)*: **$740,000 3-Year TCO** ($520K co-development + $73K/yr hosting & API opex); achieves 4-month delivery, custom dialect fine-tuning, and 100% enterprise IP retention.
-* **Technical Architecture**: Deploy full-duplex WebSocket audio streaming on Cloud Run / AWS, integrating Gemini Live API, Gemini Flash Lite for rapid turn-taking, and Google Veo for optional avatar video generation.
+Executed the §1.4 TCO decision → **Partner track**. Built the full-duplex WebSocket engine (see §4): Gemini Live API + Flash Lite turn-taking, Veo avatar video.
+**Milestone**: Staging deployment on Cloud Run.
 
 #### Phase V: Model Evaluation & Financial Validation
-* **CPMAI Objective**: Rigorously test conversational accuracy, audio latency, and financial return against baseline targets.
-* **Technical SLA Benchmarks**: Evaluate voice response latency (< 480ms P95 vs. < 500ms target), dialect recognition fidelity (94.2%), full-duplex WebSocket uptime (99.6%), and safety compliance (100%).
-* **Module 5 Integration**: Compute the **Comprehensive 4-Component ROI Model**:
-  * *Direct Savings/Revenue*: $680,000/yr reduction in 1:1 human tutoring costs + $270,000/yr subscription expansion = **$950,000/yr**.
-  * *Indirect Gains*: **$140,000/yr** in customer retention lift and reduced user churn.
-  * *Hidden Operating Costs*: **$185,000/yr** ($73K hosting + $62K Gemini API tokens + $50K moderation oversight).
-  * *Productivity Gains*: **$180,000/yr** in automated curriculum generation and grading time saved.
-  * *Financial Metrics*: Year 1 Capital Investment = **$705,000** ($520K partner + $185K Year 1 opex); Net Annual Benefit = **$1,085,000/yr**; Payback Period = **~8 Months**; **2-Year ROI = 245%**.
-* **Gate 3 Milestone**: Financial Payback & Conversational Quality SLA Sign-off.
+Ran prototype benchmarks (see §5) and the §3.3 ROI model against Gate 3 thresholds.
+**Gate 3 Milestone**: Financial Payback & Conversational Quality Sign-off.
 
-#### Phase VI: Operationalization & Active Portfolio Governance
-* **CPMAI Objective**: Deploy into production, monitor streaming health, and actively govern long-term portfolio scale.
-* **Module 4 Transition Strategy**: Execute a **Phased Rollout by Cohort/Region** with clear rollback triggers to protect brand reputation.
-* **Module 5 Controls**: Monitor **Leading Indicators** (45 min/wk session duration, <0.5% audio packet loss, 94.2% dialect accuracy) and enforce FinOps controls (audio compression, low-cost model routing for simple turns, 30-day audio log retention).
-* **Gate 4 Milestone**: Active Portfolio Governance classification (*Scale*, *Pause*, or *Terminate*).
+#### Phase VI: Operationalization & Portfolio Governance
+Phased rollout by learner cohort/region with rollback triggers (fallback to text on audio degradation). Monitored via §3.4 leading indicators and FinOps controls. Portfolio classification: **Scale** / Pause / Terminate.
+**Gate 4 Milestone**: Active Portfolio Governance sign-off.
 
 ---
 
-## 3. Value Measurement & Financial Governance
+## 3. Value Measurement & Financial Governance (All Figures Modeled)
 
-### 3.1 Pre-Launch Baselines & Multi-Stakeholder KPI Matrix
-"A KPI without a baseline is an opinion; a KPI with a baseline is evidence." Baselines established prior to launch:
-* **Baseline Engagement**: 12 minutes/week average session duration on static learning apps.
-* **Baseline Voice Latency**: 1,800ms average response delay in legacy speech engines.
+### 3.1 Pre-Launch Baselines
 
-#### Executive KPI Matrix
-* **CFO**: Net Annual Operating Benefit ($1,085,000/yr), 2-Year ROI (245%), Payback Period (~8 Months).
-* **COO / EdTech Ops**: Daily Active User ratio (DAU/MAU > 42%), Course Completion Rate (+55% lift), P95 Voice Latency (<500ms).
-* **CIO / CTO**: Full-Duplex WebSocket Uptime (99.6%), Audio Packet Loss (<0.5%), API Token Cost per Active User.
-* **Chief Content Officer**: Dialect Accuracy (94.2%), Cultural Preservation Benchmark, Learner Satisfaction (NPS > 65).
+"A KPI without a baseline is an opinion; a KPI with a baseline is evidence."
 
-### 3.2 Comprehensive 4-Component Financial ROI Model
+- **Engagement**: 12 min/week average session duration on static learning apps.
+- **Voice latency**: 1,800ms average response delay in legacy speech engines.
 
-$$\text{Net Operating Benefit} = (\text{Direct Savings/Revenue} + \text{Indirect Gains} + \text{Productivity Gains}) - \text{Hidden Operating Costs}$$
+### 3.2 Multi-Stakeholder KPI Matrix
 
-* **Direct Savings & Revenue**: $680,000/yr saved in 1:1 human tutoring scale + $270,000/yr new subscription revenue = **$950,000/yr**.
-* **Indirect Gains**: **$140,000/yr** through churn reduction and improved brand loyalty.
-* **Hidden Operating Costs**: **$185,000/yr** ($73K cloud/WebSocket hosting + $62K Gemini API tokens + $50K linguistic moderation oversight).
-* **Productivity Gains**: **$180,000/yr** in automated curriculum generation and exercise grading.
-* **Financial Summary**: Total Capital Investment = **$705,000** ($520K co-dev + $185K Year 1 opex); Net Operating Benefit = **$1,085,000/yr**; Payback Period = **~8 Months**; **2-Year ROI = 245%**.
+- **CFO**: Net Annual Benefit ($1,085,000/yr) · 2-Yr ROI (245%) · Payback (~8 mo).
+- **COO / EdTech Ops**: DAU/MAU > 42% · Course completion +55% lift · P95 voice latency < 500ms.
+- **CIO / CTO**: WebSocket uptime 99.6% · Audio packet loss < 0.5% · Token cost per active user.
+- **Chief Content Officer**: Dialect accuracy 94.2% · Learner NPS > 65.
 
-### 3.3 Leading Indicators & FinOps Cost Controls
-* **Leading Indicators**: Weekly Active User Retention (target > 45 min/wk), Audio Stream Stability (<0.5% packet drop), Dialect Accuracy Trajectory (94.2%).
-* **FinOps Cost Controls**:
-  1. *Audio Stream Compression*: 16kHz PCM audio encoding reduces network payload by 40%.
-  2. *Low-Cost Model Routing*: Route simple conversational turns to Gemini 3.1 Flash Lite; reserve full multimodal synthesis for complex dialogue.
-  3. *Artifact Retention*: 30-day retention schedule for audio logs to control cloud storage costs.
+### 3.3 Four-Component ROI Model
+
+$$\text{Net Benefit} = (\text{Direct } \$950\mathrm{K} + \text{Indirect } \$140\mathrm{K} + \text{Productivity } \$180\mathrm{K}) - \text{Opex } \$185\mathrm{K} = \mathbf{\$1{,}085{,}000/yr}$$
+
+- **Direct** ($950K/yr): $680K tutoring-cost reduction + $270K subscription expansion.
+- **Indirect** ($140K/yr): churn reduction, brand loyalty lift.
+- **Hidden opex** ($185K/yr): $73K hosting + $62K Gemini API tokens + $50K moderation oversight.
+- **Productivity** ($180K/yr): automated curriculum generation and grading.
+- **Summary**: $705K Year-1 investment ($520K co-dev + $185K opex) → **~8-month payback, ~245% 2-yr ROI** (modeled).
+
+### 3.4 Leading Indicators & FinOps Controls
+
+- **Leading indicators**: 45+ min/week session duration · < 0.5% audio packet loss · dialect-accuracy trajectory.
+- **FinOps**: 16kHz PCM compression (−40% payload) · low-cost Flash Lite routing for simple turns · 30-day audio-log retention.
 
 ---
 
-## 4. Target System Architecture & Technical Implementation
-
-The strategic framework is powered by a full-duplex WebSocket audio streaming pipeline hosted on Google Cloud Run with AWS API management:
+## 4. System Architecture
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +147,6 @@ sequenceDiagram
     participant Gemini as Gemini Live API (Flash Lite)
     participant Veo as Google Veo (Avatar Video)
     participant Audit as CloudWatch / X-Ray Telemetry
-
     Learner->>APIGW: 1. Authenticate & Request Session (JWT)
     APIGW-->>Learner: 2. Session Granted & WSS Connection URL
     Learner->>WS: 3. Full-Duplex Audio Stream (16kHz PCM)
@@ -172,55 +160,54 @@ sequenceDiagram
     WS->>Audit: 9. Async Log Telemetry & Token Usage
 ```
 
-### Technical Stack & Key Components
-* **Real-Time Audio Ingestion**: WebRTC / WebSocket Gateway with 16kHz PCM audio capture.
-* **Conversational Core**: Gemini Live API integrated with **Gemini 3.1 Flash Lite** for sub-500ms response turns.
-* **Multimodal Synthesis**: Gemini Text-to-Speech (TTS) and Google Veo for optional avatar video generation.
-* **API Management & Security**: AWS API Gateway, OAuth2/JWT authentication, and IAM least-privilege service accounts.
-* **Observability & Guardrails**: AWS CloudWatch, X-Ray distributed tracing, and automated toxicity/moderation filtering.
+### Technical Stack
+
+- **Audio ingestion**: WebRTC/WebSocket gateway, 16kHz PCM capture.
+- **Conversational core**: Gemini Live API + Gemini 3.1 Flash Lite (sub-500ms turns).
+- **Multimodal synthesis**: Gemini TTS + Google Veo avatar video.
+- **Security**: AWS API Gateway, OAuth2/JWT, IAM least-privilege service accounts.
+- **Observability**: CloudWatch, X-Ray tracing, automated toxicity/moderation filtering.
 
 ---
 
-## 5. CPMAI 6-Phase Critical Path Project Plan & SLA Benchmarks
+## 5. Build Plan & Prototype Benchmarks
 
-```
-Phase I: Business Understanding (Weeks 1-2)    [Gate 1: Go/No-Go]
-Phase II: Data Understanding (Weeks 2-4)      [Gate 2: Dialect Quality Approval]
-Phase III: Data Preparation (Weeks 4-6)       [Audio Resampling & Prompt Alignment]
-Phase IV: Model & Pipeline Dev (Weeks 6-9)    [WebSocket Gateway & Gemini Live]
-Phase V: Model Evaluation (Weeks 9-11)        [Gate 3: SLA & ROI Sign-off]
-Phase VI: Operationalization (Weeks 11-12)    [Gate 4: Active Portfolio Scale]
-```
+**Illustrative 12-week plan**: W1–2 Business Understanding [Gate 1] → W2–4 Data Understanding [Gate 2] → W4–6 Data Preparation → W6–9 Model & Pipeline Dev → W9–11 Evaluation [Gate 3] → W11–12 Operationalization [Gate 4].
 
-### Measured Production SLA Benchmarks
+### Prototype Benchmarks (Simulated — Not Production Measurements)
 
-* **Voice Response Latency**: **480ms P95** (Target: < 500ms)
-* **Dialect Recognition Fidelity**: **94.2%** (Target: > 90.0%)
-* **Full-Duplex WebSocket Uptime**: **99.6%** (Target: > 99.0%)
-* **Conversational Safety / Moderation Compliance**: **100%** (0 Exposure)
+- **Voice Response Latency**: **480ms P95** (Target: < 500ms)
+- **Dialect Recognition Fidelity**: **94.2%** (Target: > 90.0%)
+- **Full-Duplex WebSocket Uptime**: **99.6%** (Target: > 99.0%)
+- **Safety / Moderation Compliance**: **100%** (0 exposures in test corpus)
 
 ---
 
-## 6. Repository Structure & Key Deliverables
+## 6. Repository Structure
 
 ```
-genai-chatbot-afrikaans/
-├── README.md                              # Master Architecture & Governance Blueprint
+Afrikaans-AI-companion/
+├── README.md
 ├── docs/
-│   ├── business-case/
-│   │   ├── 3yr-tco-analysis.xlsx          # Financial TCO & ROI Spreadsheet Model
-│   │   └── executive-proposal.pdf         # Board-Level Business Case Proposal
-│   ├── architecture/
-│   │   ├── websocket-streaming-spec.md    # Audio Ingestion & Streaming Specification
-│   │   └── adr-001-gemini-live-engine.md  # Architecture Decision Record
-│   └── cpmai-framework/
-│       └── phase-gate-checklist.md        # CPMAI Gates 1-4 Approval Checklists
+│   ├── business-case/          # 3-yr TCO & ROI models (.xlsx), executive proposal
+│   ├── architecture/           # WebSocket streaming spec, ADR-001 (Gemini Live engine)
+│   └── cpmai-framework/        # Phase-gate checklists (Gates 1–4)
 ├── src/
-│   ├── gateway/                           # WebSocket Server & Audio Ingestion
-│   ├── agent/                             # Gemini Live API & Prompt Templates
-│   └── telemetry/                         # CloudWatch & X-Ray Distributed Tracing
+│   ├── gateway/                # WebSocket server & audio ingestion
+│   ├── agent/                  # Gemini Live API integration & prompt templates
+│   └── telemetry/              # CloudWatch / X-Ray distributed tracing
 └── tests/
-    └── latency_benchmark_test.py          # Automated P95 Latency Regression Tests
+    └── latency_benchmark_test.py  # P95 latency regression gate
 ```
 
 ---
+
+## Author
+
+**David Maralack, PMP, PMI-CPMAI** — *Senior Technical Program Manager | Enterprise AI Strategy | Cloud Solutions Architecture*
+
+📍 Seattle, WA · [LinkedIn](https://www.linkedin.com/in/david-maralack-3898135/) · maralackdavid@gmail.com
+
+- **20+ years** directing complex software/hardware programs at **Amazon** and **Microsoft** (Alexa, Kindle, Windows).
+- **3-year AI & architecture focus**: PMI-CPMAI certified; **AWS Certified AI Business Strategist (AIB-C01) in progress**; building production-grade cloud reference architectures as independent prototypes.
+- **U.S. Patent Holder**: #8,683,579 (Digital Licensing) · #8,984,124 (Adaptive Data Monitoring).
