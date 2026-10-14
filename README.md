@@ -78,28 +78,28 @@
 *Each phase applies the §1 strategy at its gate; framework definitions are not repeated here.*
 
 #### Phase I: Business Understanding
-Applied §1.1–§1.3 filters → **Gate 1 GO**. Defined audience-tailored KPIs (see §3.2).
-**Gate 1 Milestone**: Business Case & Go/No-Go Sign-off.
+- Applied §1.1–§1.3 filters → **Gate 1 GO**. Defined audience-tailored KPIs (see §3.2).
+- **Gate 1 Milestone**: Business Case & Go/No-Go Sign-off.
 
 #### Phase II: Data Understanding & Security
-Audited audio datasets for dialect nuance, noise ratios, and speech-licensing consent. Captured pre-launch baselines (see §3.1).
-**Gate 2 Milestone**: Dialect Quality, Consent & Privacy Approval.
+- Audited audio datasets for dialect nuance, noise ratios, and speech-licensing consent. Captured pre-launch baselines (see §3.1).
+- **Gate 2 Milestone**: Dialect Quality, Consent & Privacy Approval.
 
 #### Phase III: Data Preparation & Multimodal Pipeline
-16kHz PCM resampling, WebSocket audio-frame chunking, text-audio-video prompt alignment. FinOps: 15% experimental data sampling; token budgeting.
-**Milestone**: Streaming pipeline operational.
+- 16kHz PCM resampling, WebSocket audio-frame chunking, text-audio-video prompt alignment. FinOps: 15% experimental data sampling; token budgeting.
+- **Milestone**: Streaming pipeline operational.
 
 #### Phase IV: Model Development & Cloud Architecture
-Executed the §1.4 TCO decision → **Partner track**. Built the full-duplex WebSocket engine (see §4): Gemini Live API + Flash Lite turn-taking, Veo avatar video.
-**Milestone**: Staging deployment on Cloud Run.
+- Executed the §1.4 TCO decision → **Partner track**. Built the full-duplex WebSocket engine (see §4): Gemini Live API + Flash Lite turn-taking, Veo avatar video.
+- **Milestone**: Staging deployment on Cloud Run.
 
 #### Phase V: Model Evaluation & Financial Validation
-Ran prototype benchmarks (see §5) and the §3.3 ROI model against Gate 3 thresholds.
-**Gate 3 Milestone**: Financial Payback & Conversational Quality Sign-off.
+- Ran prototype benchmarks (see §5) and the §3.3 ROI model against Gate 3 thresholds.
+- **Gate 3 Milestone**: Financial Payback & Conversational Quality Sign-off.
 
 #### Phase VI: Operationalization & Portfolio Governance
-Phased rollout by learner cohort/region with rollback triggers (fallback to text on audio degradation). Monitored via §3.4 leading indicators and FinOps controls. Portfolio classification: **Scale** / Pause / Terminate.
-**Gate 4 Milestone**: Active Portfolio Governance sign-off.
+- Phased rollout by learner cohort/region with rollback triggers (fallback to text on audio degradation). Monitored via §3.4 leading indicators and FinOps controls. Portfolio classification: - **Scale** / Pause / Terminate.
+- **Gate 4 Milestone**: Active Portfolio Governance sign-off.
 
 ---
 
