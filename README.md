@@ -107,7 +107,7 @@
 
 ### 3.1 Pre-Launch Baselines
 
-"A KPI without a baseline is an opinion; a KPI with a baseline is evidence."
+*"A KPI without a baseline is an opinion; a KPI with a baseline is evidence."*
 
 - **Engagement**: 12 min/week average session duration on static learning apps.
 - **Voice latency**: 1,800ms average response delay in legacy speech engines.
